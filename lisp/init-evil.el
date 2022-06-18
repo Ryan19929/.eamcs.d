@@ -1,4 +1,3 @@
-(require 'evil)
 (use-package evil
   :ensure t
   :config
