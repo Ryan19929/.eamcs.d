@@ -4,4 +4,9 @@
 ;; 显示行号
 (global-linum-mode -1)
 
+(use-package solarized-theme
+  :ensure t
+  :config
+  (load-theme 'solarized-light t))
+
 (provide 'init-ui)
