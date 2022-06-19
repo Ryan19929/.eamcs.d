@@ -39,4 +39,16 @@
     "w/" 'split-window-horizontally
     )
 )
+
+;; evil-surround
+(use-package evil-surround
+  :ensure t
+  :config
+  (global-evil-surround-mode 1))
+
+;; which-key
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
 (provide 'init-evil)
