@@ -7,6 +7,7 @@
   (evil-leader/set-leader "<SPC>")
   :config
   (evil-mode 1)
+  (evil-set-undo-system 'undo-redo)
   (setcdr evil-insert-state-map nil)
   (define-key evil-insert-state-map [escape] 'evil-normal-state)
   (evil-leader/set-key
@@ -51,4 +52,13 @@
   :ensure t
   :config
   (which-key-mode))
+
+;; evil-org
+(add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
+(require 'evil-org)
+(add-hook 'org-mode-hook 'evil-org-mode)
+(evil-org-set-key-theme '(navigation insert textobjects additional calendar))
+(require 'evil-org-agenda)
+(evil-org-agenda-set-keys)
+
 (provide 'init-evil)
