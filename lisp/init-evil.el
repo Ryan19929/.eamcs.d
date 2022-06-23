@@ -38,6 +38,9 @@
     "wu" '+transient-tab-bar-history
     "w-" 'split-window-vertically
     "w/" 'split-window-horizontally
+
+    ;; projectile
+    "p" 'projectile-command-map
     )
 )
 

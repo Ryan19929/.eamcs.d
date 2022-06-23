@@ -8,9 +8,11 @@
 ;; 使用 y 和 n 代替 yes 和 no
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;;(use-package all-the-icons
-;;  :ensure t
-;;  :if (display-graphic-p))
+(add-to-list 'load-path "~/.emacs.d/plugins/all-the-icons.el")
+(when (display-graphic-p)
+  (require 'all-the-icons))
+
+
 
 ;; Mac OS Edition
 ;; This code helps us to work with Spacemacs (Emacs + Evil mode) in multilanguage mode
@@ -19,7 +21,7 @@
 ;; Pavel Pavlov (c) 2015
 ;; In other OS you'll have to change name of langages layers and name of Switcher like issw 
 ;; In thу Terminal # issw   show you namу of the current layout
-(setq shell-file-name "/bin/zsh")
+(setq shell-file-name "/bin/bash")
 (setq lang_source "com.apple.keylayout.ABC")                     ;set default var lang_source for issw arg
 (add-hook 'evil-insert-state-entry-hook                         ;what we do when enter insert mode
           (lambda ()
