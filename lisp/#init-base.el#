@@ -12,17 +12,14 @@
 (when (display-graphic-p)
   (require 'all-the-icons))
 
-(require 'pyim-basedict)
 (use-package pyim
   :ensure t
   :config
-  (pyim-basedict-enable)
-  (setq default-input-method "pyim")
+  (steq default-input-method "pyim")
   ;; 5 个候选词
   (setq pyim-page-length 5)
   (pyim-default-scheme 'xiaohe-shuangpin)
-  (pyim-isearch-mode 1)
-  (setq default-input-method "pyim")
-  (global-set-key (kbd "C-\\") 'toggle-input-method))
+  (pyim-isearch-mode 1))
+
 
 (provide 'init-base)
