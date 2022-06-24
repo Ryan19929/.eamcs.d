@@ -9,14 +9,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (add-to-list 'load-path "~/.emacs.d/plugins/all-the-icons.el")
+(add-to-list 'load-path "~/.emacs.d/plugins/pyim-tsinghua-dict-master")
 (when (display-graphic-p)
   (require 'all-the-icons))
 
-(require 'pyim-basedict)
+(require 'pyim-tsinghua-dict)
 (use-package pyim
   :ensure t
   :config
-  (pyim-basedict-enable)
+  (pyim-tsinghua-dict-enable)
   (setq default-input-method "pyim")
   ;; 5 个候选词
   (setq pyim-page-length 5)
