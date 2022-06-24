@@ -1,1 +1,1 @@
-("~/Library/CloudStorage/OneDrive-个人/org/" "~/code/DSI-transformers/" "~/.emacs.d/")
+("~/.emacs.d/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/code/DSI-transformers/")
