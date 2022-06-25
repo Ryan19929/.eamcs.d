@@ -1,4 +1,4 @@
-6166
+-2381
 50
 Emacs tutorial.  See end for copying conditions.
 
@@ -53,13 +53,13 @@ It is ok to scroll this text in other ways, if you know how.
 * SUMMARY
 ---------
 
-The following commands are useful for viewing screenfuls:
+The following commands are useful for viewing screenfuls: 
 
 	C-v	Move forward one screenful
 	M-v	Move backward one screenful
 	C-l	Clear screen and redisplay all the text,
 		 moving the text around the cursor
-		 to the center of the screen.
+		 to the center of the screen. 
 		 (That's CONTROL-L, not CONTROL-1.)
 
 >> Find the cursor, and note what text is near it.  Then type C-l.
