@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.emacs.d/lsp-bridge/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/code/DSI-transformers/")
+("~/.emacs.d/" "~/code/DSI-transformers/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/.emacs.d/lsp-bridge/")

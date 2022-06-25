@@ -19,13 +19,10 @@
 (use-package dashboard
   :ensure t
   :config
+  (setq dashboard-page-separator "\n\f\n")
   (dashboard-setup-startup-hook)
-  (setq dashboard-center-content t)
+;;  (setq dashboard-center-content t)
   (setq dashboard-items '((recents  . 5)
-                          (bookmarks . 5)
                           (projects . 5)
-                          (agenda . 5)
-                          (registers . 5)))
-  )
-
+                          (agenda . 5))))
 (provide 'init-ui)
