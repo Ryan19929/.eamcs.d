@@ -25,4 +25,8 @@
   (setq dashboard-items '((recents  . 5)
                           (projects . 5)
                           (agenda . 5))))
+
+(add-to-list `load-path (expand-file-name "~/.emacs.d/plugins/"))
+(require 'awesome-tray)
+(awesome-tray-mode 1)
 (provide 'init-ui)
