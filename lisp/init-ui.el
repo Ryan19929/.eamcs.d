@@ -26,7 +26,16 @@
                           (projects . 5)
                           (agenda . 5))))
 
-(add-to-list `load-path (expand-file-name "~/.emacs.d/plugins/"))
-(require 'awesome-tray)
-(awesome-tray-mode 1)
+;;行数
+(global-linum-mode 1)
+
+;;awesome-tray
+(use-package awesome-tray
+  :load-path "~/.emacs.d/plugins/"
+  :config
+  (awesome-tray-mode 1)
+  (setq awesome-tray-active-modules '("buffer-read-only" "location" "mode-name" "git" "file-path" "buffer-name"  "input-method" "battery" "date"))
+  )
+
+
 (provide 'init-ui)
