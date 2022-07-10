@@ -23,8 +23,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(conda-anaconda-home "/User/black/opt/anaconda3")
  '(package-selected-packages
-   '(edwina vterm pyim dashboard projectile all-the-icons evil-org markdown-mode yasnippet posframe neotree use-package evil)))
+   '(leetcode anaconda-mode conda edwina vterm pyim dashboard projectile all-the-icons evil-org markdown-mode yasnippet posframe neotree use-package evil)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

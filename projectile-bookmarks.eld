@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/code/DSI-transformers/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/.emacs.d/lsp-bridge/")
+("~/code/rust/world_hello/" "~/.emacs.d/" "~/code/go/hdu-cli/" "~/code/DSI-transformers/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/code/python/mysite/" "~/.emacs.d/lsp-bridge/")

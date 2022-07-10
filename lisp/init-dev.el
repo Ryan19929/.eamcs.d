@@ -19,8 +19,8 @@
 
 (require 'lsp-bridge)
 (global-lsp-bridge-mode)
-
-
+(setq lsp-bridge-python-command "/Users/black/.conda/envs/Learn_Pytorch/bin/python")
+(add-to-list 'lsp-bridge-lang-server-mode-list '(rustic-mode . "rust-analyzer"))
 (use-package projectile
   :ensure t
   :init
@@ -34,14 +34,32 @@
   :config
   (setq vtterm-kill-buffer-on-exit t))
 
-(use-package edwina
+(use-package neotree
   :ensure t
   :config
-  (setq display-buffer-base-action '(display-buffer-below-selected))
-  ;; 以下定义会被 (edwina-setup-dwm-keys) 增加 'M-' 修饰。
-  ;; 我自定义了一套按键，因为原版会把我很常用的 M-d 覆盖掉。
-  (edwina-mode 1))
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow)))
 
+(setq auto-save-default nil)
+
+
+(use-package conda
+  :load-path "~/.emacs.d/plugins/"
+  :config
+  (custom-set-variables
+ '(conda-anaconda-home "/User/black/opt/anaconda3"))
+  ;; if you want interactive shell support, include:
+(conda-env-initialize-interactive-shells)
+;; if you want eshell support, include:
+(conda-env-initialize-eshell)
+;; if you want auto-activation (see below for details), include:
+(conda-env-autoactivate-mode t)
+;; if you want to automatically activate a conda environment on the opening of a file:
+
+
+)
+
+(use-package rust-mode
+  :ensure t)
 
 (provide 'init-dev)
 
