@@ -20,7 +20,9 @@
 (require 'lsp-bridge)
 (global-lsp-bridge-mode)
 (setq lsp-bridge-python-command "/Users/black/.conda/envs/Learn_Pytorch/bin/python")
-(add-to-list 'lsp-bridge-lang-server-mode-list '(rustic-mode . "rust-analyzer"))
+
+
+
 (use-package projectile
   :ensure t
   :init

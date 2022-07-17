@@ -13,17 +13,17 @@
 (when (display-graphic-p)
   (require 'all-the-icons))
 
-(require 'pyim-tsinghua-dict)
-(use-package pyim
-  :ensure t
-  :config
-  (pyim-tsinghua-dict-enable)
-  (setq default-input-method "pyim")
-  ;; 5 个候选词
-  (setq pyim-page-length 5)
-  (pyim-default-scheme 'xiaohe-shuangpin)
-  (pyim-isearch-mode 1)
-  (setq default-input-method "pyim")
-  (global-set-key (kbd "C-\\") 'toggle-input-method))
+;;(require 'pyim-tsinghua-dict)
+;;(use-package pyim
+;;  :ensure t
+;;  :config
+;;  (pyim-tsinghua-dict-enable)
+;;  (setq default-input-method "pyim")
+;;  ;; 5 个候选词
+;;  (setq pyim-page-length 5)
+;;  (pyim-default-scheme 'xiaohe-shuangpin)
+;;  (pyim-isearch-mode 1)
+;;  (setq default-input-method "pyim")
+;;  (global-set-key (kbd "C-\\") 'toggle-input-method))
 
 (provide 'init-base)
