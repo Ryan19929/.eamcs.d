@@ -19,8 +19,8 @@
 
 (require 'lsp-bridge)
 (global-lsp-bridge-mode)
-(setq lsp-bridge-python-command "/Users/black/.conda/envs/Learn_Pytorch/bin/python")
-
+(setq lsp-bridge-python-command "/Users/black/opt/anaconda3/bin/python")
+(setq lsp-bridge-enable-auto-format-code t)
 
 
 (use-package projectile
@@ -31,10 +31,7 @@
               ("s-p" . projectile-command-map)
               ("C-c p" . projectile-command-map)))
 
-(use-package vterm
-  :ensure t
-  :config
-  (setq vtterm-kill-buffer-on-exit t))
+
 
 (use-package neotree
   :ensure t
@@ -44,24 +41,12 @@
 (setq auto-save-default nil)
 
 
-(use-package conda
-  :load-path "~/.emacs.d/plugins/"
-  :config
-  (custom-set-variables
- '(conda-anaconda-home "/User/black/opt/anaconda3"))
-  ;; if you want interactive shell support, include:
-(conda-env-initialize-interactive-shells)
-;; if you want eshell support, include:
-(conda-env-initialize-eshell)
-;; if you want auto-activation (see below for details), include:
-(conda-env-autoactivate-mode t)
-;; if you want to automatically activate a conda environment on the opening of a file:
-
-
-)
 
 (use-package rust-mode
   :ensure t)
+
+
+
 
 (provide 'init-dev)
 

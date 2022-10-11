@@ -1,1 +1,1 @@
-("~/Library/CloudStorage/OneDrive-个人/org/" "~/.emacs.d/" "~/code/python/myapp/" "~/code/python/poca/" "~/code/rust/world_hello/" "~/code/go/hdu-cli/" "~/code/DSI-transformers/" "~/code/python/mysite/" "~/.emacs.d/lsp-bridge/")
+("~/.emacs.d/" "~/Library/CloudStorage/OneDrive-个人/org/" "~/code/c++/contact_system/" "~/.emacs.d/lsp-bridge/" "~/code/python/CnkiPatentSpider/" "~/code/CnkiSpider/" "~/.emacs.d/leetcode.el/" "~/code/python/myapp/" "~/code/python/poca/" "~/code/rust/world_hello/" "~/code/go/hdu-cli/" "~/code/DSI-transformers/" "~/code/python/mysite/")

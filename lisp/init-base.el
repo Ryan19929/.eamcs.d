@@ -12,6 +12,14 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/pyim-tsinghua-dict-master")
 (when (display-graphic-p)
   (require 'all-the-icons))
+(set-terminal-coding-system 'utf-8)
+(modify-coding-system-alist 'process "*" 'utf-8)
+(setq default-process-coding-system '(utf-8 . utf-8))
+
+
+
+
+
 
 ;;(require 'pyim-tsinghua-dict)
 ;;(use-package pyim
