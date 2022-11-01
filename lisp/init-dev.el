@@ -10,17 +10,23 @@
 
 ;;
 (use-package yasnippet
-  :ensure t)
+  :ensure t
+  :config
+  (require 'yasnippet)
+  (yas-global-mode 1))
 
-(add-to-list 'load-path "~/.emacs.d/lsp-bridge")
 
-(require 'yasnippet)
-(yas-global-mode 1)
+(use-package lsp-bridge
+  :load-path "~/.emacs.d/lsp-bridge"
+  :config
+  (global-lsp-bridge-mode)
+  (setq lsp-bridge-python-command "/Users/black/opt/anaconda3/bin/python")
+  (setq lsp-bridge-enable-auto-format-code t)
+  (setq acm-enable-tabnine t)
+  (setq lsp-bridge-enable-search-words nil)
+  (setq lsp-bridge-enable-log nil))
 
-(require 'lsp-bridge)
-(global-lsp-bridge-mode)
-(setq lsp-bridge-python-command "/Users/black/opt/anaconda3/bin/python")
-(setq lsp-bridge-enable-auto-format-code t)
+
 
 
 (use-package projectile
@@ -30,8 +36,6 @@
   :bind (:map projectile-mode-map
               ("s-p" . projectile-command-map)
               ("C-c p" . projectile-command-map)))
-
-
 
 (use-package neotree
   :ensure t
@@ -44,7 +48,6 @@
 
 (use-package rust-mode
   :ensure t)
-
 
 
 

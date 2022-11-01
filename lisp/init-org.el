@@ -1,8 +1,10 @@
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
-	      (sequence "WAITING(w@/!)" "SOMEDAY(S)" "|" "CANCELLED(c@/!)" "MEETING(m)" "PHONE(p)"))))
+      (quote ((sequence "未完成(t)" "开始(s)" "|" "结束(d!/!)")
+	      (sequence "排队(w@/!)" "某天(S)" "|" "取消(c@/!)" "会议(m)" "电话(p)"))))
 
+
+(setq org-log-done 'time)
 (add-hook 'org-mode-hook (lambda ()(setq truncate-lines nil)))
 ;;fix doom modeline
 (use-package org-superstar

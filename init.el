@@ -24,8 +24,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(conda-anaconda-home "/User/black/opt/anaconda3")
+ '(org-agenda-files
+   '("~/Library/CloudStorage/OneDrive-Personal/org/Time-Manager/2022_year/W44/presentation.org" "/Users/black/OneDrive/org/Articles/c++/horse.org" "/Users/black/OneDrive/org/Time-Manager/2022_year/2022.org"))
  '(package-selected-packages
-   '(doom-themes ox-gfm clang-format leetcode anaconda-mode conda edwina vterm pyim dashboard projectile all-the-icons evil-org markdown-mode yasnippet posframe neotree use-package evil)))
+   '(company company-mode doom-themes ox-gfm clang-format leetcode anaconda-mode conda edwina vterm pyim dashboard projectile all-the-icons evil-org markdown-mode yasnippet posframe neotree use-package evil)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
