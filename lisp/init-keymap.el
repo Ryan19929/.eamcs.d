@@ -7,16 +7,16 @@
 
 
 ;; Keybonds
-(global-set-key [(hyper a)] 'mark-whole-buffer)
-(global-set-key [(hyper v)] 'yank)
-(global-set-key [(hyper c)] 'kill-ring-save)
-(global-set-key [(hyper s)] 'save-buffer)
-(global-set-key [(hyper l)] 'goto-line)
-(global-set-key [(hyper w)]
-                (lambda () (interactive) (delete-window)))
-(global-set-key [(hyper z)] 'undo)
 (global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cl" 'lsp-bridge-diagnostic-list)
 
+;; lsp-bridge
+(defun k-lsp-bridge ()
+  (local-set-key (kbd "C-c j")'lsp-bridge-diagnostic-jump-next)
+  (local-set-key (kbd "C-c k")'lsp-bridge-diagnostic-jump-prev))
+(add-hook 'lsp-bridge-mode-hook 'k-lsp-bridge)
+
+;; basic-key
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'hyper)
 

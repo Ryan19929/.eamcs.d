@@ -1,6 +1,11 @@
 ;; posframe
+
 (use-package posframe
   :ensure t)
+
+
+(use-package popon
+  :load-path "~/.emacs.d/plugins/emacs-popon")
 
 ;; markdown-mode
 (use-package markdown-mode
@@ -12,19 +17,24 @@
 (use-package yasnippet
   :ensure t
   :config
-  (require 'yasnippet)
   (yas-global-mode 1))
 
 
+
 (use-package lsp-bridge
-  :load-path "~/.emacs.d/lsp-bridge"
+  :load-path "~/.emacs.d/plugins/lsp-bridge"
   :config
   (global-lsp-bridge-mode)
-  (setq lsp-bridge-python-command "/Users/black/opt/anaconda3/bin/python")
-  (setq lsp-bridge-enable-auto-format-code t)
-  (setq acm-enable-tabnine t)
-  (setq lsp-bridge-enable-search-words nil)
-  (setq lsp-bridge-enable-log nil))
+  (setq lsp-bridge-enable-auto-format-code t))
+
+
+
+
+
+(unless (display-graphic-p)
+  (add-to-list 'load-path "~/.emacs.d/plugins/acm-terminal/")
+  (with-eval-after-load 'acm
+    (require 'acm-terminal)))
 
 
 

@@ -46,24 +46,28 @@
   :config
   (awesome-tray-mode 1)
   (setq awesome-tray-active-modules '("clock" "buffer-read-only" "location" "mode-name" "git" "file-path" "buffer-name"  "input-method" "battery" "date"))
+  ;; (setq awesome-tray-info-padding-right 1)
   )
 
 
-;; 字体
-(let ((emacs-font-size 14)
-      (emacs-font-name "WenQuanYi Micro Hei Mono"))
-  (set-frame-font (format "%s-%s" (eval emacs-font-name) (eval emacs-font-size)))
-  (set-fontset-font (frame-parameter nil 'font) 'unicode (eval emacs-font-name)))
+(if (display-graphic-p)
+    ;; 字体
+    
+  (progn (let ((emacs-font-size 14)
+	  (emacs-font-name "WenQuanYi Micro Hei Mono"))
+      (set-frame-font (format "%s-%s" (eval emacs-font-name) (eval emacs-font-size)))
+      (set-fontset-font (frame-parameter nil 'font) 'unicode (eval emacs-font-name)))
 
-(with-eval-after-load 'org
-  (defun org-buffer-face-mode-variable ()
-    (interactive)
-    (make-face 'width-font-face)
-    (set-face-attribute 'width-font-face nil :font "Sarasa Mono SC Nerd 15")
-    (setq buffer-face-mode-face 'width-font-face)
-    (buffer-face-mode))
+  (with-eval-after-load 'org
+    (defun org-buffer-face-mode-variable ()
+      (interactive)
+      (make-face 'width-font-face)
+      (set-face-attribute 'width-font-face nil :font "Sarasa Mono SC Nerd 15")
+      (setq buffer-face-mode-face 'width-font-face)
+      (buffer-face-mode))
 
- (add-hook 'org-mode-hook 'org-buffer-face-mode-variable))
+    (add-hook 'org-mode-hook 'org-buffer-face-mode-variable))))
+
 
 (face-attribute 'default :font)
 (provide 'init-ui)

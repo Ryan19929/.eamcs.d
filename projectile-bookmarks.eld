@@ -1,1 +1,0 @@
-("~/.emacs.d/" "~/code/c++/CareerSystem/" "~/Library/CloudStorage/OneDrive-Personal/org/" "~/code/rust/world_hello/" "~/.emacs.d/lsp-bridge/" "~/code/c++/contact_system/" "~/code/go/hdu-cli/" "~/.emacs.d/plugins/awesome-tray/" "~/code/python/CnkiPatentSpider/" "~/code/python/myapp/" "~/code/python/poca/" "~/code/python/mysite/")

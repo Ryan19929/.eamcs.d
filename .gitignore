@@ -4,8 +4,11 @@ tutorial/
 auto-save-list/
 snippets/
 plugins/
-.DS_Store
+.*
 recentf
 *.cache
 *.eld
 #init.el#
+.DS_Store
+projectile-bookmarks.eld
+recentf
