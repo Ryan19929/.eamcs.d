@@ -11,3 +11,5 @@ recentf
 .DS_Store
 projectile-bookmarks.eld
 recentf
+*.el#
+url
