@@ -1,7 +1,7 @@
 ;; posframe
 
 (use-package posframe
-  :ensure t)
+  :load-path "~/.emacs.d/plugins/posframe")
 
 
 (use-package popon
@@ -9,13 +9,13 @@
 
 ;; markdown-mode
 (use-package markdown-mode
-  :ensure t
+  :load-path "~/.emacs.d/plugins/emacs-popon"
   :mode ("README\\.md\\'" . gfm-mode)
   :init (setq markdown-command "multimarkdown"))
 
 ;;
 (use-package yasnippet
-  :ensure t
+  :load-path "~/.emacs.d/plugins/yasnippet"
   :config
   (yas-global-mode 1))
 
