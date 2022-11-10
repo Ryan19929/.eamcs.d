@@ -1,8 +1,10 @@
 ;; 全屏
 ;;(add-to-list 'initial-frame-alist '(fullscreen . maximized))
-(set-frame-position (selected-frame) 120 80)
-(set-frame-width (selected-frame) 160)
-(set-frame-height (selected-frame) 50)
+(set-frame-position (selected-frame) 0 0)
+(add-to-list 'default-frame-alist '(height . 100))
+(add-to-list 'default-frame-alist '(width . 200))
+;; (set-frame-width (selected-frame) 200)
+;; (set-frame-height (selected-frame) maximized)
 
 ;; 关闭工具栏，too-bar-mode 即为一个 Minor Mode
 (tool-bar-mode -1)
